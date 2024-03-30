@@ -53,6 +53,13 @@
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="createPlaylistButton">
+         <property name="text">
+          <string>Create Playlist</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QFrame" name="frame">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -81,67 +88,28 @@
              <height>1498</height>
             </rect>
            </property>
-           <widget class="QFrame" name="DummyPlaylist">
+           <widget class="QWidget" name="verticalLayoutWidget">
             <property name="geometry">
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>280</width>
-              <height>80</height>
+              <width>281</width>
+              <height>921</height>
              </rect>
             </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_2">
+            <layout class="QVBoxLayout" name="playlistsLayout">
              <item>
-              <widget class="QLabel" name="Name">
-               <property name="text">
-                <string>Name</string>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
                </property>
-              </widget>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="Stratagems">
-               <item>
-                <widget class="QLabel" name="Image1">
-                 <property name="text">
-                  <string>:/Resource/0.png</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="Image2">
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="Image3">
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="Image4">
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <widget class="QLabel" name="Difficulty">
-               <property name="text">
-                <string>Difficulty</string>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
                </property>
-              </widget>
+              </spacer>
              </item>
             </layout>
            </widget>

@@ -15,7 +15,12 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+
     ~MainWindow();
+
+    void onAddPlaylist();
+
+    void onRemovePlaylist();
 
 private:
     Ui::MainWindow *ui;
