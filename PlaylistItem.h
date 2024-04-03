@@ -3,13 +3,20 @@
 
 #include <QWidget>
 
+namespace Ui {
+class PlaylistItem;
+}
+
 class PlaylistItem : public QWidget
 {
     Q_OBJECT
-public:
-    explicit PlaylistItem(QString *name, QWidget *parent = nullptr);
 
-signals:
+public:
+    explicit PlaylistItem(QWidget *parent = nullptr);
+    ~PlaylistItem();
+
+private:
+    Ui::PlaylistItem *ui;
 };
 
 #endif // PLAYLISTITEM_H

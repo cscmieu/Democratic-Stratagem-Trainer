@@ -1,5 +1,14 @@
 #include "PlaylistItem.h"
+#include "ui_PlaylistItem.h"
 
-PlaylistItem::PlaylistItem(QString* name, QWidget *parent)
-    : QWidget{parent}
-{}
+PlaylistItem::PlaylistItem(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::PlaylistItem)
+{
+    ui->setupUi(this);
+}
+
+PlaylistItem::~PlaylistItem()
+{
+    delete ui;
+}

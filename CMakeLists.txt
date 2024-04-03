@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         stratageme.h stratageme.cpp
         stratagemeholder.h stratageme.cpp
         PlaylistItem.h PlaylistItem.cpp
+        PlaylistItem.h PlaylistItem.cpp PlaylistItem.ui
 
     )
 # Define target properties for Android with Qt 6 as:
