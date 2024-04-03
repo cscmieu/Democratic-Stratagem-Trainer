@@ -18,7 +18,7 @@ void MainWindow::onAddPlaylist()
 {
     QVBoxLayout *layout = qobject_cast<QVBoxLayout*>(ui->playlistsLayout);
 
-    QString playlistName = tr("Playlist #%1").arg(layout->count());
+    QString playlistName = QInputDialog::getText(this, tr("Create Playlist"), tr("Enter Playlist Name"));
 
     PlaylistWidget *testPlaylistWidget = new PlaylistWidget(playlistName);
 

@@ -10,10 +10,10 @@
 class Stratageme
 {
 private:
-    QString const _stratagemeType;
-    int const _id;
-    QString const _imagePath;
-    QString const _inputSequence;
+    QString _stratagemeType;
+    int _id;
+    QString _imagePath;
+    QString _inputSequence;
 
 public:
     //Constructor, Destructor
@@ -26,14 +26,12 @@ public:
     QString getImagePath(){return this->_imagePath;}
     QString getInputSequence(){return this->_inputSequence;}
 
+    //Operators
+    
+    Stratageme& operator=(const Stratageme &s);
 
     //Methodes
     int GetSequenceLength();
 };
-
-
-int Stratageme::GetSequenceLength(){
-    return this->_inputSequence.length();
-}
 
 #endif // STRATAGEME_H
