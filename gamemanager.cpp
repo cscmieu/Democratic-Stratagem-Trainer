@@ -1,3 +1,6 @@
 #include "gamemanager.h"
 
-GameManager::GameManager() {}
+GameManager::GameManager() : _currentPlaylist(),  _currentStratagem(), _currentSequence(nullptr), _sequenceProgression(0)
+{
+
+}
