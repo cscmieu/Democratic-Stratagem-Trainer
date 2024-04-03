@@ -1,3 +1,3 @@
 #include "playlist.h"
 
-playlist::playlist() {}
+Playlist::Playlist() {}

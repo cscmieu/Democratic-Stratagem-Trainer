@@ -26,16 +26,16 @@ public:
 };
 
 
-class TimeGameMode : GameManager
+class TimeGameMode : public GameManager
 {
 
     void endGame(){
 
     };
 
-}
+};
 
-class PrecisionGameMode : GameManager
+class PrecisionGameMode : public GameManager
 {
     void endGame(){
 

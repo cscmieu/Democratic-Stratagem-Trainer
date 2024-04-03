@@ -15,8 +15,8 @@ private:
     static QList<Stratageme> _allStratagem;
 
     static void addStratToList(const QJsonArray& a){
-        Stratageme tmpStrat = *new Stratageme(a[0].toString(), a[1].toInt(), a[2].toString(), a[3].toString() );
-        _allStratagem.append(tmpStrat);
+        //Stratageme tmpStrat = *new Stratageme(a[0].toString(), a[1].toInt(), a[2].toString(), a[3].toString() );
+        //_allStratagem.append(tmpStrat);
     }
 
     void initHolder(QByteArray input){
@@ -24,9 +24,9 @@ private:
         json.fromJson(input);
         QJsonArray array = json.array();
 
-        while(! array.isEmpty()) {
-            std::for_each(array.cbegin(), array.cend(), addStratToList);
-        }
+        //while(! array.isEmpty()) {
+        //    std::for_each(array.cbegin(), array.cend(), addStratToList);
+        //}
     }
 
 

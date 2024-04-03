@@ -18,7 +18,7 @@ private:
 public:
     //Constructor, Destructor
     Stratageme();
-    Stratageme(QString t, int id ,QString _imagePath, QString _inputSequence);
+    Stratageme(int id, QString t);
 
     //Getters
     QString getType(){return this->_stratagemeType;}
