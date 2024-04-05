@@ -3,7 +3,10 @@
 
 StratagemeHolder::StratagemeHolder()
 {
-    const QString input = "./data.json";
     _allStratagem = *new QList<Stratageme>;
-    this->initHolder(input);
+    for (int i = 0; i < 30; i++)
+    {
+        Stratageme strat = Stratageme(i, "./Icons/" + QString::number(i) + ".png");
+        _allStratagem.append(strat);
+    }
 }

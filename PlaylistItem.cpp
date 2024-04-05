@@ -34,13 +34,8 @@ PlaylistItem::PlaylistItem(PlaylistWidget* _playlistData, QWidget *parent)
     
     QObject::connect(
         ui->AddStratagemButton, &QPushButton::clicked,
-        this, &PlaylistItem::onAddStratagem);
-
-    // QObject::connect(
-    //     ui->Export, &QPushButton::clicked,
-    //     this, &playlistData->getPlaylist()->exportPlaylist);
-        
-    }
+        this, &PlaylistItem::onAddStratagem);        
+}
 
 PlaylistItem::~PlaylistItem()
 {
@@ -50,7 +45,8 @@ PlaylistItem::~PlaylistItem()
 void PlaylistItem::onAddStratagem()
 {
     int stratagemId = QInputDialog::getInt(this, "Add Stratagem", "Enter Stratagem ID");
-    playlistData->getPlaylist()->addStratageme(stratagemId);
+    int ok = playlistData->getPlaylist()->addStratageme(stratagemId);
+    if (ok == 0) return;
     int i = playlistData->getPlaylist()->getAllStratagems().count() - 1;
     if (i<10)
         {

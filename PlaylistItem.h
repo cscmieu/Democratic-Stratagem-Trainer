@@ -19,7 +19,7 @@ public:
     explicit PlaylistItem(PlaylistWidget* _playlistData, QWidget *parent = nullptr);
     ~PlaylistItem();
     PlaylistWidget *playlistData;
-    
+
     void onAddStratagem();
 
 private:

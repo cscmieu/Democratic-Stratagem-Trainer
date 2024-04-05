@@ -17,7 +17,7 @@ private:
 public:
     //Constructor, Destructor
     Stratageme();
-    Stratageme(int id,  QString t, QString i);
+    Stratageme(int id,  QString t, QString i = "0000");
 
     //Getters
     int getId(){return this->_id;}
@@ -26,6 +26,9 @@ public:
 
     //Operators
     Stratageme& operator=(const Stratageme &s);
+    bool operator==(const Stratageme& other) const {
+        return this->_id == other._id;
+    }
 
     //Methodes
     int GetSequenceLength();

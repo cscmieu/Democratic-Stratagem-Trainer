@@ -39,34 +39,17 @@ public:
         this->_playlistContent = *new QList<Stratageme>();
     }
 
-    void addStratageme(int stratId)
+    int addStratageme(int stratId)
     {
         Stratageme currStrat = StratagemeHolder::getInstance().getStratagemeById(stratId);
+        if (_playlistContent.contains(currStrat)) return 0;
         this->_playlistContent.append(currStrat);
+        return 1;
     }
 
     Stratageme getStratagem(int indice)
     {
         return _playlistContent[indice];
-    }
-
-
-
-
-
-    // Marche peut-être
-    void exportPlaylist()
-    {
-        QJsonObject tmpStratId;
-        for(auto v: this->_playlistContent){
-            tmpStratId.insert(QString::number(v.getId()),QJsonValue::fromVariant(v.getId()));
-        }
-        QJsonDocument doc(tmpStratId);
-        QFile file("playlist.json");
-
-        file.open(QIODevice::ReadWrite|QIODevice::Text);
-        file.write(doc.toJson());
-        file.close();
     }
 
     //Methodes
