@@ -3,12 +3,16 @@
 
 #include "./playlist.h"
 #include <QPushButton>
+#include <QObject>
 
 class PlaylistWidget : public QPushButton
 {
+    Q_OBJECT
 public:
-    explicit PlaylistWidget(QString name, QWidget *parent = nullptr);
-    Playlist content;
+    explicit PlaylistWidget(QString *name, QWidget *parent = nullptr);
+    Playlist* content;
+
+    Playlist* getPlaylist();
 
 signals:
 };

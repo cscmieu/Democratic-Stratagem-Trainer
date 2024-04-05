@@ -1,7 +1,13 @@
 #include "PlaylistWidget.h"
 
-PlaylistWidget::PlaylistWidget(QString name, QWidget *parent)
+PlaylistWidget::PlaylistWidget(QString *name, QWidget *parent)
     : QPushButton(parent)
 {
-    setText(name);
+    setText(*name);
+    content = new Playlist(name);
+}
+
+Playlist* PlaylistWidget::getPlaylist()
+{
+    return content;
 }
