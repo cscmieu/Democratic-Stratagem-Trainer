@@ -61,7 +61,10 @@ public:
      * @param other The stratageme to compare.
      * @return True if the stratageme IDs are equal, false otherwise.
      */
-    bool operator==(const Stratageme& other) const;
+    bool operator==(const Stratageme& other) const
+    {
+        return this->_id == other._id;
+    }
 
     /**
      * @brief Get the length of the input sequence required to perform the stratageme.

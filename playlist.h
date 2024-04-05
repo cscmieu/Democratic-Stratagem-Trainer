@@ -1,3 +1,9 @@
+
+/**
+ * @file playlist.h
+ * @brief This file contains the declaration of the Playlist class.
+ */
+
 #ifndef PLAYLIST_H
 #define PLAYLIST_H
 
@@ -6,7 +12,12 @@
 #include <QString>
 #include <QList>
 
-class Playlist
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class PlaylistItem;
+}
+QT_END_NAMESPACE
+
 /**
  * @class Playlist
  * @brief Represents a playlist of stratagems.
@@ -113,8 +124,4 @@ public:
      */
     void RemoveStratagem(int stratId);
 };
-
-
-
-
 #endif // PLAYLIST_H

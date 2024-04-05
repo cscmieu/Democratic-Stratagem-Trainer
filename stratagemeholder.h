@@ -1,9 +1,7 @@
-
 /**
  * @file stratagemeholder.h
- * @brief This file contains the declaration of the StratagemeHolder class and the SingletonTemplate class.
+ * @brief This file contains the declaration of the StratagemeHolder class.
  */
-
 #ifndef STRATAGEMEHOLDER_H
 #define STRATAGEMEHOLDER_H
 
@@ -15,38 +13,16 @@
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QDebug>
-
-/**
- * @class SingletonTemplate
- * @brief The SingletonTemplate class is a template class that implements the singleton design pattern.
- * @tparam T The type of the singleton instance.
- */
-template<typename T>
-class SingletonTemplate {
-public:
-    SingletonTemplate(const SingletonTemplate&) = delete;
-    SingletonTemplate& operator=(const SingletonTemplate&) = delete;
-
-    /**
-     * @brief getInstance
-     * Returns the singleton instance of type T.
-     * @return The singleton instance.
-     */
-    static T& getInstance();
-
-protected:
-    SingletonTemplate();
-    ~SingletonTemplate();
-};
+#include "SimpleSingleton.h"
 
 /**
  * @class StratagemeHolder
  * @brief The StratagemeHolder class is responsible for holding and managing a collection of Stratageme objects.
- * It implements the singleton design pattern using the SingletonTemplate class.
+ * It implements the singleton design pattern using the SimpleSingleton class.
  */
-class StratagemeHolder : public SingletonTemplate<StratagemeHolder>
+class StratagemeHolder : public SimpleSingleton<StratagemeHolder>
 {
-    friend class SingletonTemplate<StratagemeHolder>;
+    friend class SimpleSingleton<StratagemeHolder>;
 private:
 
     /**
@@ -78,7 +54,10 @@ public:
      * @param id The ID of the stratagem to retrieve.
      * @return The Stratageme object with the specified ID.
      */
-    Stratageme getStratagemeById(int id);
+    Stratageme getStratagemeById(int id)
+    {
+        return _allStratagem[id];
+    }
 };
 
 #endif // STRATAGEMEHOLDER_H
