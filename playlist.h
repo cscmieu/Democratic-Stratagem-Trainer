@@ -16,7 +16,7 @@ private:
 public:
     //Constructeurs
     Playlist();
-    Playlist(QString* name);
+    Playlist(QString name);
     ~Playlist() = default;
 
 
@@ -52,19 +52,25 @@ public:
 
 
     // Ne marche pas
-    void importPlaylist()
+    Playlist importPlaylist(QString path)
     {
         QString val;
         QFile file;
-        file.setFileName("playlist.json");
+        file.setFileName(path);
         file.open(QIODevice::ReadOnly | QIODevice::Text);
         val = file.readAll();
         file.close();
 
         QJsonDocument d = QJsonDocument::fromJson(val.toUtf8());
         QJsonObject sett2 = d.object();
-        QJsonValue value = sett2.value(QString("appName"));
-        QJsonObject item = value.toObject();
+
+
+        Playlist newPlaylist = Playlist("new playlist");
+
+        for (auto v: item){
+            //
+        }
+
     }
 
 
