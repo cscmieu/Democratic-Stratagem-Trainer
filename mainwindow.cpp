@@ -48,7 +48,7 @@ void MainWindow::onRemovePlaylist()
 void MainWindow::onClickPlaylist()
 {
     PlaylistWidget *playlist = qobject_cast<PlaylistWidget*>(sender());
-    PlaylistItem *playlistItem = new PlaylistItem(playlist->getPlaylist());
+    PlaylistItem *playlistItem = new PlaylistItem(playlist);
     playlistItem->show();
 }
 
