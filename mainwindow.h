@@ -24,6 +24,8 @@ public:
 
     void onRemovePlaylist();
 
+    void onClickPlaylist();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 #include "PlaylistWidget.h"
 #include <QPixmap>
+#include "PlaylistItem.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,24 +26,30 @@ void MainWindow::onAddPlaylist()
 
     if(ok)
     {
-        PlaylistWidget *testPlaylistWidget = new PlaylistWidget(playlistName);
+        PlaylistWidget *testPlaylistWidget = new PlaylistWidget(&playlistName);
         layout->insertWidget(0,testPlaylistWidget);
+
+        QObject::connect(
+            testPlaylistWidget, QPushButton::clicked,
+            this, &MainWindow::onClickPlaylist);
     }
     QPixmap pic("./Icons/0");
     //ui->label->setPixmap(pic);
 
-
-
-    // QObject::connect(
-    //     testPlaylistWidget, QPushButton::clicked,
-    //     this, &MainWindow::onRemovePlaylist);
 }
 
-// void MainWindow::onRemovePlaylist()
-// {
-//     PlaylistWidget *playlist = qobject_cast<PlaylistWidget*>(sender());
-//     delete playlist;
-// }
+void MainWindow::onRemovePlaylist()
+{
+    // PlaylistWidget *playlist = qobject_cast<PlaylistWidget*>(sender());
+    // delete playlist;
+}
+
+void MainWindow::onClickPlaylist()
+{
+    PlaylistWidget *playlist = qobject_cast<PlaylistWidget*>(sender());
+    PlaylistItem *playlistItem = new PlaylistItem(playlist->getPlaylist());
+    playlistItem->show();
+}
 
 MainWindow::~MainWindow()
 {

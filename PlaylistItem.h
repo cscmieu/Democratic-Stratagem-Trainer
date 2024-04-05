@@ -2,6 +2,8 @@
 #define PLAYLISTITEM_H
 
 #include <QWidget>
+#include <QString>
+#include "./playlist.h"
 
 namespace Ui {
 class PlaylistItem;
@@ -12,7 +14,7 @@ class PlaylistItem : public QWidget
     Q_OBJECT
 
 public:
-    explicit PlaylistItem(QWidget *parent = nullptr);
+    explicit PlaylistItem(Playlist*, QWidget *parent = nullptr);
     ~PlaylistItem();
 
 private:

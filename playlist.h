@@ -16,7 +16,8 @@ private:
 public:
     //Constructeurs
     Playlist();
-    Playlist(QString);
+    Playlist(QString* name);
+    ~Playlist() = default;
 
 
     //Getters & setters
