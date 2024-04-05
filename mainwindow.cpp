@@ -47,9 +47,10 @@ void MainWindow::onRemovePlaylist()
 
 void MainWindow::onClickPlaylist()
 {
+    QHBoxLayout *layout = qobject_cast<QHBoxLayout*>(ui->centralwidget->layout());
     PlaylistWidget *playlist = qobject_cast<PlaylistWidget*>(sender());
     PlaylistItem *playlistItem = new PlaylistItem(playlist);
-    playlistItem->show();
+    layout->insertWidget(1, playlistItem);
 }
 
 MainWindow::~MainWindow()
