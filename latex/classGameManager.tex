@@ -1,0 +1,75 @@
+\hypertarget{classGameManager}{}\doxysection{Game\+Manager Class Reference}
+\label{classGameManager}\index{GameManager@{GameManager}}
+
+
+The \mbox{\hyperlink{classGameManager}{Game\+Manager}} class represents the game manager that controls the game flow.  
+
+
+
+
+{\ttfamily \#include $<$gamemanager.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Manager\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}\label{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}} 
+\mbox{\hyperlink{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}{Game\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classGameManager}{Game\+Manager}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_a303a8dffcea2c8194fbbf5ab337cdf4c}{Update\+Playlist}} (\mbox{\hyperlink{classPlaylist}{Playlist}} playlist)
+\begin{DoxyCompactList}\small\item\em Updates the current playlist. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGameManager_a62518ab8be5f0702a32a02b9d15ab4c6}{chech\+Input}} (QString input)
+\begin{DoxyCompactList}\small\item\em Checks the user input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameManager_a94024879294961c3cebe9b40a5f36d70}\label{classGameManager_a94024879294961c3cebe9b40a5f36d70}} 
+void \mbox{\hyperlink{classGameManager_a94024879294961c3cebe9b40a5f36d70}{next\+Stratagem}} ()
+\begin{DoxyCompactList}\small\item\em Switches to the next stratagem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classGameManager}{Game\+Manager}} class represents the game manager that controls the game flow. 
+
+It manages the current playlist, stratagem, sequence progression, and provides methods to update the playlist, check user input, and switch to the next stratagem. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameManager_a62518ab8be5f0702a32a02b9d15ab4c6}\label{classGameManager_a62518ab8be5f0702a32a02b9d15ab4c6}} 
+\index{GameManager@{GameManager}!chechInput@{chechInput}}
+\index{chechInput@{chechInput}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{chechInput()}{chechInput()}}
+{\footnotesize\ttfamily int Game\+Manager\+::chech\+Input (\begin{DoxyParamCaption}\item[{QString}]{input }\end{DoxyParamCaption})}
+
+
+
+Checks the user input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The user input to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the input check. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameManager_a303a8dffcea2c8194fbbf5ab337cdf4c}\label{classGameManager_a303a8dffcea2c8194fbbf5ab337cdf4c}} 
+\index{GameManager@{GameManager}!UpdatePlaylist@{UpdatePlaylist}}
+\index{UpdatePlaylist@{UpdatePlaylist}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{UpdatePlaylist()}{UpdatePlaylist()}}
+{\footnotesize\ttfamily void Game\+Manager\+::\+Update\+Playlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlaylist}{Playlist}}}]{playlist }\end{DoxyParamCaption})}
+
+
+
+Updates the current playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist} & The new playlist to update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gamemanager.\+h\item 
+\mbox{\hyperlink{gamemanager_8cpp}{gamemanager.\+cpp}}\end{DoxyCompactItemize}

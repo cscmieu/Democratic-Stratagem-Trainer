@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="GameManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGameManager.html",tooltip="The GameManager class represents the game manager that controls the game flow."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="PrecisionGameMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPrecisionGameMode.html",tooltip="The PrecisionGameMode class represents a game mode based on precision."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TimeGameMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTimeGameMode.html",tooltip="The TimeGameMode class represents a game mode based on time."];
+}

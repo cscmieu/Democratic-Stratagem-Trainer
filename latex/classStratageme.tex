@@ -1,0 +1,175 @@
+\hypertarget{classStratageme}{}\doxysection{Stratageme Class Reference}
+\label{classStratageme}\index{Stratageme@{Stratageme}}
+
+
+The \mbox{\hyperlink{classStratageme}{Stratageme}} class represents a strategic move or action in a game.  
+
+
+
+
+{\ttfamily \#include $<$stratageme.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStratageme_a5a04a3efc9c4009b76b8581bbd2e5714}\label{classStratageme_a5a04a3efc9c4009b76b8581bbd2e5714}} 
+\mbox{\hyperlink{classStratageme_a5a04a3efc9c4009b76b8581bbd2e5714}{Stratageme}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classStratageme}{Stratageme}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStratageme_a8dfa9885bcdda015da98896b96cb848a}{Stratageme}} (int id, QString t, QString i=\char`\"{}0000\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classStratageme}{Stratageme}} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStratageme_a4822d8451e8498f98030eb568becaf45}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the ID of the stratageme. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classStratageme_ab9067bfa2bef4f3390b853f5be849d45}{get\+Image\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the image path of the stratageme. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classStratageme_a1ce1c5b139ff7c2c7255ba9a712a207a}{get\+Input\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the input sequence required to perform the stratageme. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStratageme}{Stratageme}} \& \mbox{\hyperlink{classStratageme_a90db559bb42e678f4e4f3e98557abb9c}{operator=}} (const \mbox{\hyperlink{classStratageme}{Stratageme}} \&s)
+\begin{DoxyCompactList}\small\item\em Assignment operator for the \mbox{\hyperlink{classStratageme}{Stratageme}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStratageme_aee224d8288839fcbcf194747684fcd7e}{operator==}} (const \mbox{\hyperlink{classStratageme}{Stratageme}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator for the \mbox{\hyperlink{classStratageme}{Stratageme}} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStratageme_a2915b3bd3e0ef6b61acc00e33e98bfc0}{Get\+Sequence\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Get the length of the input sequence required to perform the stratageme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classStratageme}{Stratageme}} class represents a strategic move or action in a game. 
+
+This class provides functionality to store and retrieve information about a stratageme, such as its ID, image path, and input sequence. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStratageme_a8dfa9885bcdda015da98896b96cb848a}\label{classStratageme_a8dfa9885bcdda015da98896b96cb848a}} 
+\index{Stratageme@{Stratageme}!Stratageme@{Stratageme}}
+\index{Stratageme@{Stratageme}!Stratageme@{Stratageme}}
+\doxysubsubsection{\texorpdfstring{Stratageme()}{Stratageme()}}
+{\footnotesize\ttfamily Stratageme\+::\+Stratageme (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{QString}]{t,  }\item[{QString}]{i = {\ttfamily \char`\"{}0000\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classStratageme}{Stratageme}} class. 
+
+Parameterized constructor for the \mbox{\hyperlink{classStratageme}{Stratageme}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the stratageme. \\
+\hline
+{\em t} & The image path of the stratageme. \\
+\hline
+{\em i} & The input sequence required to perform the stratageme.\\
+\hline
+{\em id} & The ID of the stratageme. \\
+\hline
+{\em t} & The image path of the stratageme. \\
+\hline
+{\em i} & The input sequence of the stratageme. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStratageme_a4822d8451e8498f98030eb568becaf45}\label{classStratageme_a4822d8451e8498f98030eb568becaf45}} 
+\index{Stratageme@{Stratageme}!getId@{getId}}
+\index{getId@{getId}!Stratageme@{Stratageme}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Stratageme\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the ID of the stratageme. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the stratageme. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStratageme_ab9067bfa2bef4f3390b853f5be849d45}\label{classStratageme_ab9067bfa2bef4f3390b853f5be849d45}} 
+\index{Stratageme@{Stratageme}!getImagePath@{getImagePath}}
+\index{getImagePath@{getImagePath}!Stratageme@{Stratageme}}
+\doxysubsubsection{\texorpdfstring{getImagePath()}{getImagePath()}}
+{\footnotesize\ttfamily QString Stratageme\+::get\+Image\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the image path of the stratageme. 
+
+\begin{DoxyReturn}{Returns}
+The image path of the stratageme. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStratageme_a1ce1c5b139ff7c2c7255ba9a712a207a}\label{classStratageme_a1ce1c5b139ff7c2c7255ba9a712a207a}} 
+\index{Stratageme@{Stratageme}!getInputSequence@{getInputSequence}}
+\index{getInputSequence@{getInputSequence}!Stratageme@{Stratageme}}
+\doxysubsubsection{\texorpdfstring{getInputSequence()}{getInputSequence()}}
+{\footnotesize\ttfamily QString Stratageme\+::get\+Input\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the input sequence required to perform the stratageme. 
+
+\begin{DoxyReturn}{Returns}
+The input sequence required to perform the stratageme. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStratageme_a2915b3bd3e0ef6b61acc00e33e98bfc0}\label{classStratageme_a2915b3bd3e0ef6b61acc00e33e98bfc0}} 
+\index{Stratageme@{Stratageme}!GetSequenceLength@{GetSequenceLength}}
+\index{GetSequenceLength@{GetSequenceLength}!Stratageme@{Stratageme}}
+\doxysubsubsection{\texorpdfstring{GetSequenceLength()}{GetSequenceLength()}}
+{\footnotesize\ttfamily int Stratageme\+::\+Get\+Sequence\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the length of the input sequence required to perform the stratageme. 
+
+Get the length of the input sequence.
+
+\begin{DoxyReturn}{Returns}
+The length of the input sequence. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStratageme_a90db559bb42e678f4e4f3e98557abb9c}\label{classStratageme_a90db559bb42e678f4e4f3e98557abb9c}} 
+\index{Stratageme@{Stratageme}!operator=@{operator=}}
+\index{operator=@{operator=}!Stratageme@{Stratageme}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStratageme}{Stratageme}} \& Stratageme\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStratageme}{Stratageme}} \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for the \mbox{\hyperlink{classStratageme}{Stratageme}} class. 
+
+Assignment operator overload for the \mbox{\hyperlink{classStratageme}{Stratageme}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The stratageme to assign. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assigned stratageme.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The stratageme to be assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assigned stratageme. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStratageme_aee224d8288839fcbcf194747684fcd7e}\label{classStratageme_aee224d8288839fcbcf194747684fcd7e}} 
+\index{Stratageme@{Stratageme}!operator==@{operator==}}
+\index{operator==@{operator==}!Stratageme@{Stratageme}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Stratageme\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStratageme}{Stratageme}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for the \mbox{\hyperlink{classStratageme}{Stratageme}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The stratageme to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the stratageme IDs are equal, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stratageme.\+h\item 
+\mbox{\hyperlink{stratageme_8cpp}{stratageme.\+cpp}}\end{DoxyCompactItemize}

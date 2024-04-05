@@ -1,0 +1,67 @@
+\hypertarget{classStratagemeHolder}{}\doxysection{Stratageme\+Holder Class Reference}
+\label{classStratagemeHolder}\index{StratagemeHolder@{StratagemeHolder}}
+
+
+The \mbox{\hyperlink{classStratagemeHolder}{Stratageme\+Holder}} class is responsible for holding and managing a collection of \mbox{\hyperlink{classStratageme}{Stratageme}} objects. It implements the singleton design pattern using the \mbox{\hyperlink{classSingletonTemplate}{Singleton\+Template}} class.  
+
+
+
+
+{\ttfamily \#include $<$stratagemeholder.\+h$>$}
+
+
+
+Inheritance diagram for Stratageme\+Holder\+:
+% FIG 0
+
+
+Collaboration diagram for Stratageme\+Holder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStratageme}{Stratageme}} \mbox{\hyperlink{classStratagemeHolder_a3902a9b67a827d7d9c66f2ace372aa7b}{get\+Stratageme\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em get\+Stratageme\+By\+Id Retrieves a \mbox{\hyperlink{classStratageme}{Stratageme}} object from the list of all stratagems by its ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStratagemeHolder_a5d66b9be90e55711842ba6780dbd2ffe}\label{classStratagemeHolder_a5d66b9be90e55711842ba6780dbd2ffe}} 
+QList$<$ \mbox{\hyperlink{classStratageme}{Stratageme}} $>$ {\bfseries \+\_\+all\+Stratagem}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStratagemeHolder_abf33f7671865158f9417cbb7f6185316}\label{classStratagemeHolder_abf33f7671865158f9417cbb7f6185316}} 
+class {\bfseries Singleton\+Template$<$ Stratageme\+Holder $>$}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classStratagemeHolder}{Stratageme\+Holder}} class is responsible for holding and managing a collection of \mbox{\hyperlink{classStratageme}{Stratageme}} objects. It implements the singleton design pattern using the \mbox{\hyperlink{classSingletonTemplate}{Singleton\+Template}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStratagemeHolder_a3902a9b67a827d7d9c66f2ace372aa7b}\label{classStratagemeHolder_a3902a9b67a827d7d9c66f2ace372aa7b}} 
+\index{StratagemeHolder@{StratagemeHolder}!getStratagemeById@{getStratagemeById}}
+\index{getStratagemeById@{getStratagemeById}!StratagemeHolder@{StratagemeHolder}}
+\doxysubsubsection{\texorpdfstring{getStratagemeById()}{getStratagemeById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStratageme}{Stratageme}} Stratageme\+Holder\+::get\+Stratageme\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+get\+Stratageme\+By\+Id Retrieves a \mbox{\hyperlink{classStratageme}{Stratageme}} object from the list of all stratagems by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the stratagem to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classStratageme}{Stratageme}} object with the specified ID. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stratagemeholder_8h}{stratagemeholder.\+h}}\item 
+\mbox{\hyperlink{stratagemeholder_8cpp}{stratagemeholder.\+cpp}}\end{DoxyCompactItemize}

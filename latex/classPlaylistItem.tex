@@ -1,0 +1,91 @@
+\hypertarget{classPlaylistItem}{}\doxysection{Playlist\+Item Class Reference}
+\label{classPlaylistItem}\index{PlaylistItem@{PlaylistItem}}
+
+
+The \mbox{\hyperlink{classPlaylistItem}{Playlist\+Item}} class represents a single item in a playlist.  
+
+
+
+
+{\ttfamily \#include $<$Playlist\+Item.\+h$>$}
+
+
+
+Inheritance diagram for Playlist\+Item\+:
+% FIG 0
+
+
+Collaboration diagram for Playlist\+Item\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlaylistItem_aeb10e12a412b811d420faf505776f574}{Playlist\+Item}} (\mbox{\hyperlink{classPlaylistWidget}{Playlist\+Widget}} $\ast$\+\_\+playlist\+Data, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPlaylistItem}{Playlist\+Item}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlaylistItem_a759200efbb612c3d1dd5be59f7ceed9f}\label{classPlaylistItem_a759200efbb612c3d1dd5be59f7ceed9f}} 
+\mbox{\hyperlink{classPlaylistItem_a759200efbb612c3d1dd5be59f7ceed9f}{$\sim$\+Playlist\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPlaylistItem}{Playlist\+Item}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlaylistItem_a1b118307e95e9106721d55a9dbf886c3}{on\+Add\+Stratagem}} ()
+\begin{DoxyCompactList}\small\item\em Adds a stratagem to the playlist item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlaylistWidget}{Playlist\+Widget}} $\ast$ \mbox{\hyperlink{classPlaylistItem_a68a930b73176d07b1786815c2759a176}{playlist\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPlaylistItem}{Playlist\+Item}} class represents a single item in a playlist. 
+
+This class inherits from QWidget and provides functionality to display and interact with a playlist item. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlaylistItem_aeb10e12a412b811d420faf505776f574}\label{classPlaylistItem_aeb10e12a412b811d420faf505776f574}} 
+\index{PlaylistItem@{PlaylistItem}!PlaylistItem@{PlaylistItem}}
+\index{PlaylistItem@{PlaylistItem}!PlaylistItem@{PlaylistItem}}
+\doxysubsubsection{\texorpdfstring{PlaylistItem()}{PlaylistItem()}}
+{\footnotesize\ttfamily Playlist\+Item\+::\+Playlist\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlaylistWidget}{Playlist\+Widget}} $\ast$}]{\+\_\+playlist\+Data,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{classPlaylistItem}{Playlist\+Item}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+playlist\+Data} & A pointer to the \mbox{\hyperlink{classPlaylistWidget}{Playlist\+Widget}} object that contains the playlist data. \\
+\hline
+{\em parent} & The parent widget.\\
+\hline
+{\em \+\_\+playlist\+Data} & Pointer to the \mbox{\hyperlink{classPlaylistWidget}{Playlist\+Widget}} object. \\
+\hline
+{\em parent} & Pointer to the parent QWidget. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlaylistItem_a1b118307e95e9106721d55a9dbf886c3}\label{classPlaylistItem_a1b118307e95e9106721d55a9dbf886c3}} 
+\index{PlaylistItem@{PlaylistItem}!onAddStratagem@{onAddStratagem}}
+\index{onAddStratagem@{onAddStratagem}!PlaylistItem@{PlaylistItem}}
+\doxysubsubsection{\texorpdfstring{onAddStratagem()}{onAddStratagem()}}
+{\footnotesize\ttfamily void Playlist\+Item\+::on\+Add\+Stratagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds a stratagem to the playlist item. 
+
+Slot function called when the Add Stratagem button is clicked. Prompts the user to enter a Stratagem ID and adds it to the playlist. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlaylistItem_a68a930b73176d07b1786815c2759a176}\label{classPlaylistItem_a68a930b73176d07b1786815c2759a176}} 
+\index{PlaylistItem@{PlaylistItem}!playlistData@{playlistData}}
+\index{playlistData@{playlistData}!PlaylistItem@{PlaylistItem}}
+\doxysubsubsection{\texorpdfstring{playlistData}{playlistData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlaylistWidget}{Playlist\+Widget}}$\ast$ Playlist\+Item\+::playlist\+Data}
+
+A pointer to the \mbox{\hyperlink{classPlaylistWidget}{Playlist\+Widget}} object that contains the playlist data. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{PlaylistItem_8h}{Playlist\+Item.\+h}}\item 
+\mbox{\hyperlink{PlaylistItem_8cpp}{Playlist\+Item.\+cpp}}\end{DoxyCompactItemize}
