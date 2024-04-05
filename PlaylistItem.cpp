@@ -48,6 +48,7 @@ void PlaylistItem::onAddStratagem()
     int ok = playlistData->getPlaylist()->addStratageme(stratagemId);
     if (ok == 0) return;
     int i = playlistData->getPlaylist()->getAllStratagems().count() - 1;
+    ui->Difficulty->setText(QString::number(playlistData->getPlaylist()->getDifficulty()));
     if (i<10)
         {
             QLabel *strat = new QLabel();

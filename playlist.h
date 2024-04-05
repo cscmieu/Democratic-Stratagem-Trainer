@@ -44,6 +44,7 @@ public:
         Stratageme currStrat = StratagemeHolder::getInstance().getStratagemeById(stratId);
         if (_playlistContent.contains(currStrat)) return 0;
         this->_playlistContent.append(currStrat);
+        setDifficulty(getDifficulty() + currStrat.getId());
         return 1;
     }
 

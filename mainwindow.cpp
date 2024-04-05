@@ -45,6 +45,7 @@ void MainWindow::onClickPlaylist()
     if (layout->count() > 3) {
         delete layout->itemAt(2)->widget();
     }
+    playlistItem->setStyleSheet("border: 1px solid black");
     layout->insertWidget(2, playlistItem);
 }
 
