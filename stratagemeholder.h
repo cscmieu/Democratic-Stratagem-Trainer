@@ -13,20 +13,37 @@
 
 
 
-class StratagemeHolder
-{
-private:
-    QList<Stratageme> _allStratagem;
+template<typename T>
+class SingletonTemplate {
+public:
+    SingletonTemplate(const SingletonTemplate&) = delete;
+    SingletonTemplate& operator=(const SingletonTemplate&) = delete;
+    static T& getInstance() {
+        static T instance; // Guaranteed to be destroyed and instantiated on first use
+        return instance;
+    }
 
+protected:
+    SingletonTemplate() {}
+
+    ~SingletonTemplate() {}
+};
+
+
+
+class StratagemeHolder : public SingletonTemplate<StratagemeHolder>
+{
+    friend class SingletonTemplate<StratagemeHolder>;
+private:
+
+    StratagemeHolder() {};
+    StratagemeHolder(const QString input);
     void addStratToList(const QJsonArray& a){
         Stratageme tmpStrat = *new Stratageme(a[0].toInt(), a[1].toString(), a[2].toString(), a[3].toString());
         _allStratagem.append(tmpStrat);
     }
 
     void initHolder(const QString input){
-        //QJsonDocument json;
-        //json.fromJson(input);
-        //QJsonArray array = json.array();
 
         QFile file(input);
         file.open(QIODevice::ReadOnly | QIODevice::Text);
@@ -39,25 +56,26 @@ private:
         QJsonValue value = object.value("agentsArray");
         QJsonArray array = value.toArray();
 
-        //while(! array.isEmpty()) {
-        //   std::for_each(array.cbegin(), array.cend(), addStratToList);
-        //}
+
 
         foreach (const QJsonValue & v, array)
         {
-            qDebug() << v.toObject().value("ID").toInt();
+
+            //this->_allStratagem.append(v);
         }
     }
 
 
 public:
-    StratagemeHolder();
-    StratagemeHolder(const QString input);
+    QList<Stratageme> _allStratagem;
 
 
-Stratageme getStratagemeById(int id)
+
+
+
+    Stratageme getStratagemeById(int id)
     {
-    return _allStratagem[id];
+        return _allStratagem[id];
     }
 };
 

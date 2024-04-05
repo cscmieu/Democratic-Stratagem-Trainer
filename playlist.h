@@ -28,14 +28,20 @@ public:
     void setDifficulty(int newDif){this->_difficulty = newDif;}
 
 
+    QList<Stratageme> getAllStratagems()
+    {
+        return _playlistContent;
+    }
+
+
     void clearPlaylist()
     {
         this->_playlistContent = *new QList<Stratageme>();
     }
 
-    void addStratageme(int stratId, StratagemeHolder s)
+    void addStratageme(int stratId)
     {
-        Stratageme currStrat = s.getStratagemeById(stratId);
+        Stratageme currStrat = StratagemeHolder::getInstance().getStratagemeById(stratId);
         this->_playlistContent.append(currStrat);
     }
 
