@@ -18,11 +18,17 @@ void MainWindow::onAddPlaylist()
 {
     QVBoxLayout *layout = qobject_cast<QVBoxLayout*>(ui->playlistsLayout);
 
-    QString playlistName = QInputDialog::getText(this, tr("Create Playlist"), tr("Enter Playlist Name"));
+    bool ok = false;
 
-    PlaylistWidget *testPlaylistWidget = new PlaylistWidget(playlistName);
+    QString playlistName = QInputDialog::getText(this, tr("Create Playlist"), tr("Enter Playlist Name"), QLineEdit::Normal , QString() ,&ok);
 
-    layout->insertWidget(0,testPlaylistWidget);
+    if(ok)
+    {
+        PlaylistWidget *testPlaylistWidget = new PlaylistWidget(playlistName);
+        layout->insertWidget(0,testPlaylistWidget);
+    }
+
+
 
     // QObject::connect(
     //     testPlaylistWidget, QPushButton::clicked,
