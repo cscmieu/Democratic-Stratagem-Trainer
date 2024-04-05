@@ -6,6 +6,14 @@
 #include <QInputDialog>
 #include "playlist.h"
 
+/**
+ * @brief The QT_BEGIN_NAMESPACE macro is used to begin the Qt namespace.
+ *
+ * The Qt namespace is used to encapsulate all the classes, functions, and objects provided by the Qt framework.
+ * The `QT_BEGIN_NAMESPACE` macro is used to indicate the start of the Qt namespace.
+ * It is typically followed by the `namespace` keyword and the name of the namespace.
+ * This macro is used to avoid naming conflicts and to organize the Qt framework's components.
+ */
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;

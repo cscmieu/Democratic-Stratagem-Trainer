@@ -1,9 +1,18 @@
+/**
+ * @file mainwindow.cpp
+ * @brief Implementation file for the MainWindow class.
+ */
+
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "PlaylistWidget.h"
 #include <QPixmap>
 #include "PlaylistItem.h"
 
+/**
+ * @brief Constructor for the MainWindow class.
+ * @param parent The parent widget.
+ */
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -15,6 +24,10 @@ MainWindow::MainWindow(QWidget *parent)
         this, &MainWindow::onAddPlaylist);
 }
 
+/**
+ * @brief Slot function called when the "Create Playlist" button is clicked.
+ * It prompts the user to enter a playlist name and adds a new PlaylistWidget to the UI.
+ */
 void MainWindow::onAddPlaylist()
 {
     QVBoxLayout *layout = qobject_cast<QVBoxLayout*>(ui->playlistsLayout);
@@ -37,6 +50,10 @@ void MainWindow::onAddPlaylist()
 
 }
 
+/**
+ * @brief Slot function called when a playlist widget is clicked.
+ * It creates a new PlaylistItem and adds it to the UI.
+ */
 void MainWindow::onClickPlaylist()
 {
     QHBoxLayout *layout = qobject_cast<QHBoxLayout*>(ui->centralwidget->layout());
@@ -49,6 +66,9 @@ void MainWindow::onClickPlaylist()
     layout->insertWidget(2, playlistItem);
 }
 
+/**
+ * @brief Destructor for the MainWindow class.
+ */
 MainWindow::~MainWindow()
 {
     delete ui;

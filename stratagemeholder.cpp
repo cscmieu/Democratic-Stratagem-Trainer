@@ -1,6 +1,14 @@
+
+/**
+ * @file stratagemeholder.cpp
+ * @brief Implementation file for the StratagemeHolder class.
+ */
+
 #include "stratagemeholder.h"
 
-
+/**
+ * @brief Default constructor for the StratagemeHolder class.
+ */
 StratagemeHolder::StratagemeHolder()
 {
     _allStratagem = *new QList<Stratageme>;
