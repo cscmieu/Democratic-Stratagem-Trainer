@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+
     QObject::connect(
         ui->createPlaylistButton, &QPushButton::clicked,
         this, &MainWindow::onAddPlaylist);

@@ -23,7 +23,7 @@ private:
         _allStratagem.append(tmpStrat);
     }
 
-    void initHolder(QByteArray input){
+    void initHolder(const QString input){
         //QJsonDocument json;
         //json.fromJson(input);
         //QJsonArray array = json.array();
@@ -52,7 +52,7 @@ private:
 
 public:
     StratagemeHolder();
-    StratagemeHolder(QByteArray);
+    StratagemeHolder(const QString input);
 
 
 Stratageme getStratagemeById(int id)

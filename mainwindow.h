@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QVBoxLayout>
 #include <QInputDialog>
+#include "stratagemeholder.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,6 +17,8 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    StratagemeHolder _stratagemeHolder = StratagemeHolder();
+
     MainWindow(QWidget *parent = nullptr);
 
     ~MainWindow();
