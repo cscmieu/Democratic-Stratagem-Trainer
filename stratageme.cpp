@@ -2,7 +2,7 @@
 
 Stratageme::Stratageme(){}
 
-Stratageme::Stratageme(int id, QString t, QString i) : _id(id), _imagePath(t), _inputSequence(i)
+Stratageme::Stratageme(int id, QString n,QString t, QString i) : _id(id), _name(n), _imagePath(t), _inputSequence(i)
 {
 
 }

@@ -19,7 +19,7 @@ private:
     QList<Stratageme> _allStratagem;
 
     void addStratToList(const QJsonArray& a){
-        Stratageme tmpStrat = *new Stratageme(a[0].toInt(), a[1].toString(), a[2].toString() );
+        Stratageme tmpStrat = *new Stratageme(a[0].toInt(), a[1].toString(), a[2].toString(), a[3].toString());
         _allStratagem.append(tmpStrat);
     }
 

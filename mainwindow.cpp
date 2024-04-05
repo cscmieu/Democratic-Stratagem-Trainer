@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "PlaylistWidget.h"
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,6 +28,8 @@ void MainWindow::onAddPlaylist()
         PlaylistWidget *testPlaylistWidget = new PlaylistWidget(playlistName);
         layout->insertWidget(0,testPlaylistWidget);
     }
+    QPixmap pic("./Icons/0");
+    //ui->label->setPixmap(pic);
 
 
 
