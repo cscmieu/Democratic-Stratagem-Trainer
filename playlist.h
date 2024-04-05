@@ -38,6 +38,10 @@ public:
         this->_playlistContent.append(currStrat);
     }
 
+    Stratageme getStratagem(int indice)
+    {
+        return _playlistContent[indice];
+    }
 
     //Methodes
 

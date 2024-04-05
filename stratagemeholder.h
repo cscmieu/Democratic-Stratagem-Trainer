@@ -31,10 +31,7 @@ private:
 
 
 public:
-    StratagemeHolder()
-    {
-        _allStratagem = *new QList<Stratageme>;
-    }
+    StratagemeHolder();
 
 
 static Stratageme getStratagemeById(int id)

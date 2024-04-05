@@ -27,7 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         gamemanager.h gamemanager.cpp
         playlist.h playlist.cpp
         stratageme.h stratageme.cpp
-        stratagemeholder.h stratageme.cpp
+        stratagemeholder.h stratagemeholder.cpp
         PlaylistItem.h PlaylistItem.cpp
         PlaylistItem.h PlaylistItem.cpp PlaylistItem.ui
 

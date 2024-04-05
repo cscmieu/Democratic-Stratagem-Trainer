@@ -15,9 +15,10 @@ private:
 
 public:
     GameManager();
+
     void UpdatePlaylist(Playlist);
 
-    virtual void endGame();
+    //virtual void endGame();
 
     int chechInput(QString);    //Va falloir clarifier ce que fait chaque fonction mdr
 

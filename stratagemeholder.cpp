@@ -1,3 +1,6 @@
 #include "stratagemeholder.h"
 
-StratagemeHolder::StratagemeHolder() {}
+StratagemeHolder::StratagemeHolder()
+{
+    _allStratagem = *new QList<Stratageme>;
+}
