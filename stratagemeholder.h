@@ -2,7 +2,6 @@
 #define STRATAGEMEHOLDER_H
 
 #include "stratageme.h"
-#include <algorithm>
 #include <QList>
 #include <QFile>
 #include <QByteArray>
@@ -36,10 +35,9 @@ class StratagemeHolder : public SingletonTemplate<StratagemeHolder>
     friend class SingletonTemplate<StratagemeHolder>;
 private:
 
-    StratagemeHolder() {};
-    StratagemeHolder(const QString input);
+    StratagemeHolder();
     void addStratToList(const QJsonArray& a){
-        Stratageme tmpStrat = *new Stratageme(a[0].toInt(), a[1].toString(), a[2].toString(), a[3].toString());
+        Stratageme tmpStrat = *new Stratageme(a[0].toInt(), a[1].toString(), a[2].toString());
         _allStratagem.append(tmpStrat);
     }
 

@@ -1,0 +1,13 @@
+{
+    "stratagems":[
+        {
+        "id": 0,
+        "path": "./0.png",
+        "sequence": ""
+        },
+        {"id":1,
+        "path": "./1.png",
+        "sequence": ""
+        }
+    ]
+}

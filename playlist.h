@@ -50,16 +50,44 @@ public:
         return _playlistContent[indice];
     }
 
-    //Methodes
 
+    // Ne marche pas
+    void importPlaylist()
+    {
+        QString val;
+        QFile file;
+        file.setFileName("playlist.json");
+        file.open(QIODevice::ReadOnly | QIODevice::Text);
+        val = file.readAll();
+        file.close();
+
+        QJsonDocument d = QJsonDocument::fromJson(val.toUtf8());
+        QJsonObject sett2 = d.object();
+        QJsonValue value = sett2.value(QString("appName"));
+        QJsonObject item = value.toObject();
+    }
+
+
+    // Marche peut-être
+    void exportPlaylist()
+    {
+        QJsonObject tmpStratId;
+        for(auto v: this->_playlistContent){
+            tmpStratId.insert(QString::number(v.getId()),QJsonValue::fromVariant(v.getId()));
+        }
+        QJsonDocument doc(tmpStratId);
+        QFile file("playlist.json");
+
+        file.open(QIODevice::ReadWrite|QIODevice::Text);
+        file.write(doc.toJson());
+        file.close();
+    }
+
+    //Methodes
     void AddStratagem(int);
     void RemoveStratagem(int);
 
 };
-
-
-
-
 
 
 
