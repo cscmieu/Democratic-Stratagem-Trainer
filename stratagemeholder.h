@@ -52,6 +52,7 @@ private:
 
 public:
     StratagemeHolder();
+    StratagemeHolder(QByteArray);
 
 
 Stratageme getStratagemeById(int id)

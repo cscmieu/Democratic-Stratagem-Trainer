@@ -26,7 +26,6 @@ public:
     QString getInputSequence(){return this->_inputSequence;}
 
     //Operators
-    
     Stratageme& operator=(const Stratageme &s);
 
     //Methodes
