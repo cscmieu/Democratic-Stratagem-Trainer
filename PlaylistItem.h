@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QString>
+#include <QInputDialog>
 #include "PlaylistWidget.h"
 #include "./playlist.h"
 
@@ -18,8 +19,7 @@ public:
     explicit PlaylistItem(PlaylistWidget* _playlistData, QWidget *parent = nullptr);
     ~PlaylistItem();
     PlaylistWidget *playlistData;
-
-    void onDisplayPlaylist();
+    
     void onAddStratagem();
 
 private:

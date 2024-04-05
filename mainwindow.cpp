@@ -9,12 +9,14 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-
+    
     QObject::connect(
         ui->createPlaylistButton, &QPushButton::clicked,
         this, &MainWindow::onAddPlaylist);
 
+    // QObject::connect(
+    //     ui->Import, &QPushButton::clicked,
+    //     this, &MainWindow::importPlaylist);
 }
 
 void MainWindow::onAddPlaylist()
@@ -39,12 +41,6 @@ void MainWindow::onAddPlaylist()
 
 }
 
-void MainWindow::onRemovePlaylist()
-{
-    // PlaylistWidget *playlist = qobject_cast<PlaylistWidget*>(sender());
-    // delete playlist;
-}
-
 void MainWindow::onClickPlaylist()
 {
     QHBoxLayout *layout = qobject_cast<QHBoxLayout*>(ui->centralwidget->layout());
@@ -56,4 +52,9 @@ void MainWindow::onClickPlaylist()
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+Playlist* MainWindow::importPlaylist(QString* path)
+{
+    
 }

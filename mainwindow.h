@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QVBoxLayout>
 #include <QInputDialog>
+#include "playlist.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -27,6 +28,8 @@ public:
     void onRemovePlaylist();
 
     void onClickPlaylist();
+
+    Playlist* importPlaylist(QString* path);
 
 private:
     Ui::MainWindow *ui;
