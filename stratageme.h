@@ -10,7 +10,6 @@
 class Stratageme
 {
 private:
-    QString _stratagemeType;
     int _id;
     QString _imagePath;
     QString _inputSequence;
@@ -18,10 +17,9 @@ private:
 public:
     //Constructor, Destructor
     Stratageme();
-    Stratageme(int id, QString t);
+    Stratageme(int id, QString t, QString i);
 
     //Getters
-    QString getType(){return this->_stratagemeType;}
     int getId(){return this->_id;}
     QString getImagePath(){return this->_imagePath;}
     QString getInputSequence(){return this->_inputSequence;}

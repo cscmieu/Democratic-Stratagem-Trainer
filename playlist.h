@@ -32,9 +32,9 @@ public:
         this->_playlistContent = *new QList<Stratageme>();
     }
 
-    void addStratageme(int stratId)
+    void addStratageme(int stratId, StratagemeHolder s)
     {
-        Stratageme currStrat = StratagemeHolder::getStratagemeById(stratId);
+        Stratageme currStrat = s.getStratagemeById(stratId);
         this->_playlistContent.append(currStrat);
     }
 

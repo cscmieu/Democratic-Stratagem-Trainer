@@ -20,7 +20,7 @@ public:
 
     //virtual void endGame();
 
-    int chechInput(QString);    //Va falloir clarifier ce que fait chaque fonction mdr
+    int chechInput(QString);            //Va falloir clarifier ce que fait chaque fonction mdr
 
     void nextStratagem();
 
